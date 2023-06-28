@@ -1,237 +1,278 @@
-
-.general{
-  width: 100%;
-  height: 620px;
-  background-image: url('img-menu/1686177522865.jpg');
-  background-repeat: no-repeat;
-  margin-top: 0px;
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    background-image: url('img-menu/1686177522865.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*contenedor de las lista de carreras*/
+.container-carreras{
+    width: 345px; 
+    height: 590px; 
+    left: 980px; 
+    top: 110px; 
+    position: absolute; 
+    opacity: 0.70; 
+    background: white; 
+    border-radius: 10px; 
+    border-left: 2.50px #0339F9 solid; 
+    border-top: 2.50px #0339F9 solid; 
+    border-right: 2.50px #0339F9 solid;
+    border-bottom: 2.50px #0339F9 solid
+}
+/*contenedor de los logos de las carreras de la lista*/
+.container-logo-carreras{
+    width: 30.21px; 
+    height: 503px; 
+    left: 998px; 
+    top: 135px; 
+    position: absolute; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 13px; 
+    display: inline-flex
+}
+/*tamaños de los logos de la lista de carreras*/
+.logo-carreras-lista{
+    width: 30px; 
+    height: 30px
+}
+/*contenedor del titulo carreras*/
+.container-titulo-carreras{
+    width: 200px; 
+    height: 44px; 
+    left: 1055px; 
+    top: 50px; 
+    position: absolute; 
+    opacity: 0.70; 
+    background: white; 
+    border-radius: 10px; border-left: 2.50px #0339F9 solid; 
+    border-top: 2.50px #0339F9 solid; 
+    border-right: 2.50px #0339F9 solid; 
+    border-bottom: 2.50px #0339F9 solid
+}
+/*pisicionamiento de la imagen de las indicaciones*/
+.imagen-indicaciones{
+    width: 362.57px; 
+    height: 400px; 
+    left: 7px; 
+    top: 180px; 
+    position: absolute
+}
+/*posicionamiento del logo de suiza-maps*/
+.container-logo-maps{
+    width: 200px; 
+    height: 290px; 
+    left: 490px; 
+    top: 98px; 
+    position: absolute
 }
 .btn-logo{
-  position: relative;
-
-}
-
-.btn-logo::before,
-.btn-logo::after{
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  top: -420px;
-  left: 100px;
-  border-radius: 50%;
-  background-color: white;
-  opacity: 0;
-  animation: ondas 1.7s infinite;
-}
-
-.btn-logo:before{
-  animation-delay: 1s;
-}
-
-.btn-logo:before{
-  animation-delay: 1.3s;
-}
-
-@keyframes ondas {
-  0% {
-    transform: scale(1);
+    position: relative;
+  
   }
-  15% {
-    opacity: 1;
-  }
-  100%{
+  
+  .btn-logo::before,
+  .btn-logo::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -380px;
+    left: 80px;
+    border-radius: 50%;
+    background-color: white;
     opacity: 0;
-    transform: scale(2.5);
+    animation: ondas 1.7s infinite;
   }
-}
-
-.btn-logo img{
-  position: relative;
-  z-index: 2;
-}
-
-.logo-map{
-  position: absolute;
-  margin-left: 280px;
-  margin-top: 10px;
-}
-
+  
+  .btn-logo:before{
+    animation-delay: 1s;
+  }
+  
+  .btn-logo:before{
+    animation-delay: 1.3s;
+  }
+  
+  @keyframes ondas {
+    0% {
+      transform: scale(1);
+    }
+    15% {
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      transform: scale(2.5);
+    }
+  }
+  
+  .btn-logo img{
+    position: relative;
+    z-index: 2;
+  }
 .logo-map-img{
-  width: 400px;
+    width: 350px;
 }
 
-.circle {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  margin-top: 115px;
-  margin-left: 480px;
-  animation: turn1 50s linear infinite;
+/*contenedor de las carreras que forman un circulo*/
+.circulo-carreras{
+    width: 523.97px; 
+    height: 542px; 
+    left: 398px; 
+    top: 89px; 
+    position: absolute
+}
+/*posicionamiento del texto titulo*/
+.titulo{
+    width: 159px; 
+    height: 21px; 
+    left: 1075px; 
+    top: 64px; 
+    position: absolute; 
+    text-align: center; 
+    color: black; 
+    font-size: 18px;  
+    font-weight: 700; 
+    word-wrap: break-word
+}
+/*psocionamiento de la lista de carreras*/
+.text-1{
+    width: 275px; 
+    height: 27px; 
+    left: 1035px; 
+    top: 140px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700;
+     word-wrap: break-word
+}
+.text-2{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 180px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-3{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 235px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-4{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 283px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-5{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 327px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-6{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 368px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-7{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 425px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px;  
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-8{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 473px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-9{
+    width: 289px; 
+    height: 30px; 
+    left: 1035px; 
+    top: 518px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-10{
+    width: 289px; 
+    height: 31px; 
+    left: 1035px; 
+    top: 565px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-11{
+    width: 289px; 
+    height: 31px; 
+    left: 1035px; 
+    top: 612px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.text-12{
+    width: 289px; 
+    height: 31px; 
+    left: 1035px; 
+    top: 658px; 
+    position: absolute; 
+    color: black; 
+    font-size: 16px; 
+    font-weight: 700; 
+    word-wrap: break-word
 }
 
-@keyframes turn1 {
-  to {
-    transform: rotate(turn);
-  }
-} 
-
-.image:hover{
-  width: 130px;
-  height: 130px;
-  cursor: pointer;
-  transition: 1S;
-}
-
-.image {
-  
-  width: 100px;
-  height: 100px;  
-  
-}
-
-circle , a {
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-circle, a:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(30deg) translate(250px) rotate(-30deg);
-}
-
-circle, a:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(60deg) translate(250px) rotate(-60deg);
-}
-
-circle, a:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(90deg) translate(250px) rotate(-90deg);
-}
-
-circle, a:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(120deg) translate(250px)
-    rotate(-120deg);
-}
-
-circle, a:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(150deg) translate(250px)
-    rotate(-150deg);
-}
-
-circle, a:nth-child(6) {
-  transform: translate(-50%, -50%) rotate(180deg) translate(250px)
-    rotate(-180deg);
-}
-
-circle, a:nth-child(7) {
-  transform: translate(-50%, -50%) rotate(210deg) translate(250px)
-    rotate(-210deg);
-}
-
-circle, a:nth-child(8) {
-  transform: translate(-50%, -50%) rotate(240deg) translate(250px)
-    rotate(-240deg);
-}
-
-circle, a:nth-child(9) {
-  transform: translate(-50%, -50%) rotate(270deg) translate(250px)
-    rotate(-270deg);
-}
-
-circle, a:nth-child(10) {
-  transform: translate(-50%, -50%) rotate(300deg) translate(250px)
-    rotate(-300deg);
-}
-
-circle, a:nth-child(11) {
-  transform: translate(-50%, -50%) rotate(330deg) translate(250px)
-    rotate(-330deg);
-}
-
-circle, a:nth-child(12) {
-  transform: translate(-50%, -50%) rotate(360deg) translate(250px)
-    rotate(-358deg);
+a{
+    text-decoration: none;
 }
 
 
-
-.mensaje{
-  position: absolute;
-  top: 15%;
-  left: -1%;
-  border-radius: 5%;
-}
-
-.carreras{
-  border: 3px solid rgb(24, 78, 228);
-  background: white ;
-  opacity: 70%;
-  position: absolute;
-  width: 200px;
-  height: auto;
-  top: 5%;
-  left: 78.3%;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-.texto{
-  margin: 10px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.lista-carreras{
-  border: 3px solid rgb(24, 78, 228);
-  background: white ;
-  opacity: 70%;
-  position: absolute;
-  width: 345px;
-  height: 500px;
-  top: 15%;
-  left: 73%;
-  border-radius: 5%;
-}
-.lista, tabla{
-  width: 320px;
-  height: 40px;
-  margin: 10px;
-}
-
-.lista{
-  list-style: none;
-  margin-left: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul li{
-  padding:0px 0px 21px 0px;
-}
-
-.lista-logo{
-  opacity: 70%;
-  position: absolute;
-  width: 300px;
-  height: auto;
-  top: 18%;
-  left: 77%;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  
-}
-.carreras-img{
-  margin: 0px;
-  padding: 0px;
-  width: 30px;
-}
-
-.carreras-img{
-  margin: 4px;
-}
