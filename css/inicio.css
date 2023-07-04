@@ -63,11 +63,10 @@
 }
 .figura-salchicha-abajo img{
     width: 21%;
-    height: 18%;
+    height: 26%;
     position: absolute;
     left: 78.9%;
-    top: 81.6%;
-    opacity: 60%;
+    top: 76%;
 }
 .figura-ovalado img{
     width: 100%;
@@ -76,21 +75,23 @@
     opacity: 10%;
     top: -15%;
 }
+/*--------------------------------------------------*/
+
+/*estilos para darle onda a BIENVENIDO*/
 .titulo {
     height: 100vh;
     width: 100vw;
     display: flex;    
     align-items: center;
     justify-content: center;
-
-    font-family: "Work Sans", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
     top: -20%;
-    left: -13%;
+    left: 3%;
 }
 
-h2 {
-    font-size: 16vmin;
+h3 {
+    font-size: 13vmin;
     position: absolute;
 
 }
@@ -114,6 +115,10 @@ h2 {
         clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
     }
 }
+/*--------------------------------------------------*/
+
+/*estilos para darle onda a SUIZA*/
+
 
 .titulo-suiza {
    
@@ -121,7 +126,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-    font-family: "Work Sans", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
@@ -151,18 +156,19 @@ h2 {
         clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
     }
 }
+/*--------------------------------------------------*/
 
-.pulse-aqui{
+.pulse-aqui{   /*cuadro de pulsar*/
     background-color: rgba(240, 248, 255, 0.705);
     width: 32%;
     height: 10%;
     border-radius: 30px;
     position: absolute;
     left: 36%;
-    top: 89%;
+    top: 80%;
 
 }
-.pulse-aqui:hover{
+.pulse-aqui:hover{ /*cuadro de pulsar estilo cambiar fondo (color)*/
     background-color: rgba(32, 143, 240, 0.705);
     width: 34%;
     height: 10%;
@@ -170,32 +176,33 @@ h2 {
     border-style: none;
     position: absolute;
     left: 36%;
-    top: 89%;
+    top: 80%;
 
 }
-.pulse-aqui h1{
+.pulse-aqui h1{/*texto de PULSE AQUI*/
     color: rgba(9, 130, 146, 0.973);
-    font-size: 8.4vmin;
+    font-size: 6.5vmin;
     position: absolute;
-    left: 18%
+    top: 10%;
+    left: 24%;
     
     
 }
 .pulse-aqui h1:hover{
     color: rgba(196, 206, 206, 0.973);
-    font-size: 8.4vmin;
+    font-size: 6.5vmin;
     position: absolute;
-    left: 18%
+    top: 10%;
+    left: 24%
     
     
 }
-.icon-maps img{
-    width: 20%;
-    height:30%;
+.icon-maps img{ /*esto es el icono de maps (puntero)*/
+    width: 24%;
+    height:40%;
     position: absolute;
-    top: 68%;
-    left: 28%;
-    opacity: 60%;
+    top: 67%;
+    left: 21%;
     animation-name: flotar;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -209,13 +216,13 @@ h2 {
     100%   { transform: translate(0, -0px); }   
 }
 
-.borde-luminoso-left img{
+.borde-luminoso-left img{ /*borde destello de luz izquierdo*/
     position: absolute;
     width: 18%;
     height: 100%;
     
 }
-.borde-luminoso-right img{
+.borde-luminoso-right img{/*borde destello de luz derecho*/
     position: absolute;
     width: 18%;
     height: 100%;
@@ -225,9 +232,9 @@ h2 {
 .alfiler-maps img{
     position: absolute;
     width: 15%;
-    height: 15%;
-    left: 62%;
-    top: 40%;
+    height: 19%;
+    left: 68%;
+    top: 37%;
 }
 .maps-letra img{
     width: 20%;
@@ -250,3 +257,4 @@ h2 {
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }   
 }
+

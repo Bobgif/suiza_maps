@@ -1,3 +1,31 @@
-.qr-svg{
-    width: 50%;
+
+.img-fondo{
+    z-index: 1;
+    width: 100%;
+    position: relative;
+}
+.img-croquis{
+    z-index: 2;
+    width: 85%;
+    position: relative;
+    top: -505px;
+    left: 60px;
+}
+.qr-svg img{
+    width: 30%;
+    position:relative;
+    border-radius: 12px;
+    left: 25%;
+    bottom: 10px;
+}
+.slider{
+    width: 90%;
+}
+.slider img{
+     border-radius: 12px;
+}
+.botones{
+    top: -600;
+    z-index: 5;
+    position: relative;
 }
