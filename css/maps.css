@@ -3,11 +3,14 @@
     z-index: 1;
     width: 100%;
     position: relative;
+    top:auto;
+    bottom: 0%;
+    right: 0;
 }
 .img-croquis{
     z-index: 2;
     width: 85%;
-    position: relative;
+    position:relative;
     top: -505px;
     left: 60px;
 }
@@ -17,15 +20,17 @@
     border-radius: 12px;
     left: 25%;
     bottom: 10px;
+    right: 0;
 }
 .slider{
     width: 90%;
+    right: 0;
 }
 .slider img{
      border-radius: 12px;
 }
-.botones{
-    top: -600;
-    z-index: 5;
-    position: relative;
+
+
+.footer{
+    position: absolute;
 }

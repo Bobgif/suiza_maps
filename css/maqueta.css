@@ -8,6 +8,7 @@ body{
     background-image: url('../img/fondo1.png');
     background-repeat: no-repeat;
     width: 100%;
+    bottom: 0;
 }
 
 .cuerpo-container{
@@ -29,10 +30,10 @@ body{
     border-radius: 20px;
     border-style: none;
     position: relative;
-    top: 35%;
-    left:20%;
+    top: -400px;
+    left:0%;
     font-weight: bold;
-    
+    z-index: 5;
 
 }
 .seccion-bottom .linea{
@@ -40,7 +41,7 @@ body{
 }
 
 .seccion-bottom button:hover{ 
-background-color: rgb(29, 231, 238);
+background-color: rgb(227, 236, 236);
 color: white;
 }
 
@@ -64,11 +65,12 @@ color: white;
 }
 .tituloh1{
 font-size: 50px;
-color: white;
+color: rgb(1, 161, 253);
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 position: relative;
 text-align: center;
 top: 3%;
+background-color: aliceblue;
     
 }
 .fondoimg{
