@@ -5,39 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="maqueta.css">
+    <link rel="stylesheet" href="../css/maqueta.css">
+    <link rel="stylesheet" href="../css/maps.css">
+    <link href="../css/css-b/bootstrap.min.css" rel="stylesheet" >
+  
 </head>
-<body>
+<body >
     
 
-            <div class="cuerpo-container" style="background-image: url('fondo1.png');">
+            <div>
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="tituloh1 ">PROGRAMA DE MECÁNICA AUTOMOTRIZ</h1>  <!--titulo-->
+                 
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-lg-7 col-md-7 col-sg-7" >
+                  <div class="col-12">
+                    <img src="../img/MAPS CUADRO 1.png" alt="" class="img-fondo"> <!--cuadro de fondo opaco -->
+                  <!--  <img src="../img/croquis/croquis-admin.png" alt="" class="img-croquis"> croquis -->
+                    <div class="img-croquis">
+                      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1AkTFpfaC1o9EmWdLztiSzQOeq7caX_4&ehbc=2E312F"  width="640" height="400"></iframe>
 
-                <section class="seccion-bottom"> <!--botones-->
-                    <button> <a href="menu.html" class="linea">MENÚ</a></button>  
-                     <button class="button2"><a href="index.html" class="linea">INICIO</a></button>  
-                </section>
+                    </div>
+                    <!--botones-->
+                    <div class="row seccion-bottom">
+                      <div class="col-6">
+                         <button ><a href="../index.html" class="btn boton">INICIO</a></button>  
+                      </div>
+                      <div class="col-6 ">
+                        <button > <a href="../menu.html" class="btn boton ">MENÚ</a></button>  
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-5 col-md-5 col-md-5"> <!--aqui ira la descripcion de cada carrera-->
+                  <div class=" tituloh2">
+                    
+                        <p >Escanea el  QR para navegar en google maps.
+                        </p>                   
+                    
+                  </div>
+                    <div class="qr-svg ">
+                        <img src="../img/qr-carreras/qr-mecatronica.svg" alt="" class="">  <!--aqui estará el qr-->
+                    </div>
 
-                <section class="seccion-bottom-centro">
-                    <h1>Mecanica Automotriz</h1>  <!--titulo-->
-
-                    <img src="MAPS CUADRO 1.png" alt=""> <!--cuadro de fondo opaco -->
-
-                    <h2>Bienvenido</h2> <!--bienvenida parte inferior de la pantalla-->
-
-                    <img src="img/SUIZA MAPS TXT.png" alt="" class="letra-maps">  <!--imagen del suiza-maps-->              </section>
-
-                <section class="seccion-bottom-descripcion"> <!--aqui ira la descripcion de cada carrera-->
-                    <p>
-                       DESCRIPCION DE LA CARRERA 
-
-                        Lorem ipsum dolor sit amet consectetur
-                         adipisicing elit. Dignissimos quibusdam iusto
-                          cumque nobis, provident nostrum inventore quae
-                           facilis reiciendis ducimus corporis sint 
-                           numquam ex ratione itaque ut fugit sequi consequatur.
-                    </p>
-                </section>
+                    <!--inicio slider-->
+                    <div class="slider">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../img/jpeg/meca.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/jpeg/mecatronica.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/jpeg/meca.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/jpeg/meca1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                    </div>
+                   
+                  </div>
+              </div>
             </div>
+            
+            
+        <script src="../css/js-b/bootstrap.min.js" ></script>
+    </body>
     
-</body>
+
 </html>
